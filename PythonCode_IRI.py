@@ -13,8 +13,8 @@ from pyproj import CRS
 # -----------------------------
 # --- USER PATHS & TUNABLES ---
 # -----------------------------
-LAS_FILE   = r"C:\PhD_files\PhD_thesis\Postdoc - Positions\New Hampshire\Post-Doc_Activity_Data\Post-Doc_Activity_Data\rt26_sec2_31424 3.las"          # LiDAR raster (from LAS)
-CENTERLINE = r"C:\PhD_files\PhD_thesis\Postdoc - Positions\New Hampshire\Post-Doc_Activity_Data\Post-Doc_Activity_Data\Post-Doc_Activity_Data\Road_CenterLine.shp"                   # polyline for roadway center
+LAS_FILE   = r"...\rt26_sec2_31424 3.las"          # LiDAR raster (from LAS)
+CENTERLINE = r"...\Road_CenterLine.shp"                   # polyline for roadway center
 BUFFER_M = 2.0            # buffer around centerline to select points
 PROFILE_STEP_M = 0.03     # 3 cm sampling
 
@@ -92,7 +92,7 @@ from scipy.signal import savgol_filter
 PROFILE_STEP_M = 0.03    # sampling step used earlier (m)
 SEG_LEN_M = 25.0         # segment length for reporting IRI (m)
 IRI_SPEED_KMH = 80.0     # standard speed
-OUT_DIR        = r"C:\PhD_files\PhD_thesis\Postdoc - Positions\New Hampshire\Post-Doc_Activity_Data\Post-Doc_Activity_Data\Output"  # existing folder
+OUT_DIR        = r"...\Output"  # existing folder
 CSV_PATH       = rf"{OUT_DIR}/rt26_segments_metrics.csv"
 SHP_SEG_PATH   = os.path.join(OUT_DIR, "segments_25m.shp")
 SHP_PTS_PATH   = os.path.join(OUT_DIR, "segments_25m_midpoints.shp")
@@ -257,6 +257,7 @@ print(f"Saved shapefiles → {SHP_SEG_PATH}, {SHP_PTS_PATH}")
 
 #-----------------------------------------------------------------------------
 #-----------------------------------------------------------------------------
+
 
 
 
